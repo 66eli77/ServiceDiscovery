@@ -1,0 +1,106 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#767676"
+    tools:context="com.example.servicediscovery.MainActivity" >
+    
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/mytitle"
+        android:textStyle="bold"
+        android:textSize="28sp"
+        android:paddingTop="20dp"
+        android:paddingLeft="20dp"
+        android:paddingBottom="20dp"
+        android:text="ADMINISTRATION" />
+    
+    <Button
+        android:id="@+id/cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/title"
+        android:layout_alignBottom="@+id/title" 
+        android:layout_toLeftOf="@+id/save"
+        android:background="@drawable/mycancelbutton"
+        android:textStyle="bold"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginRight="15dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="Cancel" />
+    
+    <Button
+        android:id="@+id/save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/title"
+        android:layout_alignBottom="@+id/title" 
+        android:layout_alignParentRight="true"
+        android:background="@drawable/mysavebutton"
+        android:textStyle="bold"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginRight="15dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:textColor="#FFFFFF"
+        android:text="Save" />
+    
+    <View
+    android:id="@+id/underline"
+    android:layout_below="@id/title"
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:background="#545454" />
+    
+      <Button
+        android:id="@+id/congfi_btn"
+        android:layout_below="@id/underline"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="20dp"
+        android:background="@drawable/mybutton"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:text="Tablet Configuration" />
+    
+    <Button
+        android:id="@+id/discover_btn"
+        android:layout_below="@id/congfi_btn"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="20dp"
+        android:background="@drawable/mybutton"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:onClick="clickDiscover"
+        android:text="Service Discovery" />
+    
+    <Button
+        android:id="@+id/displays_btn"
+        android:layout_below="@id/discover_btn"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="20dp"
+        android:background="@drawable/mybutton"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:text="Displays" />
+
+</RelativeLayout>
